@@ -1,0 +1,23 @@
+
+
+                Customers
+id,first_name,last_name,current_video_rentals
+1,Jon,Young,Guardians Of The Galaxy/La La Land
+2,Tom,Prete,Prometheus/Split/Sing
+3,Rod,Levy,The Dark Knight/Guardians Of The Galaxy/Split
+4,Ankur,Shah,The Prestige
+5,Chris,Howell,
+
+
+          inventory
+id,title,rating,copies_available
+1,Guardians of the Galaxy,PG-13,5
+2,Prometheus,R,2
+3,Split,PG-13,8
+4,Sing,PG,10
+5,La La Land,PG-13,0
+6,WALL-E,G,3
+7,The Prestige,PG-13,1
+8,The Dark Knight,PG-13,5
+9,Inception,PG-13,2
+10,Interstellar,PG-13,0

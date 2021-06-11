@@ -1,1 +1,5 @@
-# Write your solution here!
+from interface import Interface
+
+menu = Interface()
+
+menu.run()

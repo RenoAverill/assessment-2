@@ -1,32 +1,30 @@
 # import items needed
-from os import name
-from video import Video
-from customers import Customers
 
-class Interface():
+from video import *
+from customers import *
+
+class Interface(Video, Customers):
     def __init__(self):
         pass
         #Create a running interface function 
     def run(self):
-
-        input = self.main_menu()
-        
         # Create a reactive interace
         while True:
+            input = self.main_menu()
             if input == '1':
-                return Video.get_video_inventory(self)
+                Video.get_total_inventory(self)
             elif input == '2':
-                return Customers.check_customer_vids(self)
+                Customers.get_customer_vids(self)
             elif input == '3':
-                return Video.rent_video(self)
+                Video.rent_video(self)
             elif input == '4':
-                return Video.return_video(self)
+                Video.return_video(self)
             elif input == '5':
-                return Customers.set_customer(self)
+                Customers.set_customer(self)
             elif input == '6':
                 print("\n\nHave a great day!")
                 break
-
+            
 # Create an interface menu with various options
     def main_menu(self):
 
